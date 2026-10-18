@@ -1,0 +1,30 @@
+{% extends "hotelapp/base.html" %}
+{% block title %}Blue Haven Hotel | Home{% endblock %}
+{% block content %}
+<section class="hero">
+ <div class="container py-5">
+  <div class="row align-items-center min-vh-50">
+   <div class="col-lg-7 text-white py-5">
+    <span class="eyebrow">WELCOME TO BLUE HAVEN</span>
+    <h1 class="display-3 fw-bold mt-3">Your perfect stay<br><span class="text-warning">starts here.</span></h1>
+    <p class="lead col-lg-10">Comfortable rooms, thoughtful service, and effortless booking — all in one place.</p>
+    <a class="btn btn-warning btn-lg me-2" href="{% url 'room_list' %}">Explore Rooms</a>
+    {% if not user.is_authenticated %}<a class="btn btn-outline-light btn-lg" href="{% url 'register' %}">Join Us</a>{% endif %}
+   </div>
+   <div class="col-lg-5"><div class="hero-card"><div class="display-4">✦</div><h3>Stay a little longer.</h3><p class="mb-0">Book your next comfortable escape.</p></div></div>
+  </div>
+ </div>
+</section>
+<section class="container py-5">
+ <div class="d-flex justify-content-between align-items-end mb-4"><div><span class="eyebrow text-primary">OUR ACCOMMODATION</span><h2 class="section-title">Featured rooms</h2></div><a href="{% url 'room_list' %}" class="link-primary fw-semibold">View all rooms →</a></div>
+ <div class="row g-4">
+ {% for room in featured_rooms %}
+ <div class="col-md-6 col-lg-4"><div class="card room-card h-100">
+ {% if room.image %}<img src="{{ room.image.url }}" class="card-img-top room-image" alt="{{ room.name }}">{% else %}<div class="room-placeholder">🛏️</div>{% endif %}
+ <div class="card-body d-flex flex-column"><div class="d-flex justify-content-between"><span class="badge text-bg-light">{{ room.room_type }}</span><span class="price">₹{{ room.price_per_night }}<small>/night</small></span></div><h3 class="h5 mt-3">{{ room.name }}</h3><p class="text-muted">{{ room.description|truncatewords:18 }}</p><a class="btn btn-primary mt-auto" href="{% url 'room_detail' room.id %}">View Details</a></div>
+ </div></div>
+ {% empty %}<div class="col-12"><div class="empty-state"><h3>Your rooms will appear here</h3><p>Add rooms in Django Admin to start showcasing them.</p><a class="btn btn-primary" href="/admin/">Open Admin</a></div></div>{% endfor %}
+ </div>
+</section>
+<section class="feature-band"><div class="container py-5"><div class="row g-4 text-center"><div class="col-md-4"><div class="feature-icon">🗓️</div><h4>Easy Booking</h4><p>Choose your dates and reserve in minutes.</p></div><div class="col-md-4"><div class="feature-icon">🔒</div><h4>Secure Accounts</h4><p>Your bookings are linked to your own account.</p></div><div class="col-md-4"><div class="feature-icon">✨</div><h4>Thoughtful Comfort</h4><p>Simple, welcoming rooms for every stay.</p></div></div></div></section>
+{% endblock %}
