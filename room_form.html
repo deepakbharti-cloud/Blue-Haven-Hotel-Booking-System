@@ -1,0 +1,1 @@
+{% extends 'hotels/base.html' %}{% block content %}<section class="section narrow"><h1>Add room · {{ hotel.name }}</h1><form method="post" enctype="multipart/form-data" class="panel">{% csrf_token %}{{ form.as_p }}<button class="btn">Save room</button></form></section>{% endblock %}

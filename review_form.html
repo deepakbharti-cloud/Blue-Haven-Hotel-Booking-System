@@ -1,0 +1,1 @@
+{% extends 'hotels/base.html' %}{% block content %}<section class="section narrow"><h1>Review {{ hotel.name }}</h1><p class="muted">Only customers with a confirmed stay can leave a review.</p><form method="post" class="panel">{% csrf_token %}{{ form.as_p }}<button class="btn">Submit review</button></form></section>{% endblock %}

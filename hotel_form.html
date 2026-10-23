@@ -1,0 +1,1 @@
+{% extends 'hotels/base.html' %}{% block content %}<section class="section narrow"><h1>{{ title }}</h1><p class="muted">Your hotel will be visible publicly after admin approval.</p><form method="post" enctype="multipart/form-data" class="panel">{% csrf_token %}{{ form.as_p }}<button class="btn">Submit hotel</button></form></section>{% endblock %}
