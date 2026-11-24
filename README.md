@@ -1,16 +1,21 @@
 <div align="center">
 <img src="assets/banner.svg" alt="Blue Haven Hotel Booking System" width="100%"/>
-<br/>
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![Razorpay](https://img.shields.io/badge/Razorpay-Test_Mode-0C2451?style=for-the-badge&logo=razorpay&logoColor=white)
- 
-**Browse rooms, book your stay, pay securely - a clean hotel booking app built with Django.**
- 
-[Features](#-features) - [How it works](#-how-a-booking-works) - [Quick start](#-quick-start) - [Data model](#-data-model) - [Production checklist](#-production-checklist) - [Author](#-author)
- 
+<p>
+<img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django"/>
+<img src="https://img.shields.io/badge/Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap 5"/>
+<img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite"/>
+<img src="https://img.shields.io/badge/Razorpay-Test_Mode-0C2451?style=for-the-badge&logo=razorpay&logoColor=white" alt="Razorpay"/>
+</p>
+<img src="assets/tagline.svg" alt="Browse rooms. Book your stay. Pay securely." width="720"/>
+<p>
+<a href="#features"><img src="https://img.shields.io/badge/Features-0ea5e9?style=flat-square" alt="Features"/></a>
+<a href="#how-a-booking-works"><img src="https://img.shields.io/badge/How_it_works-6366f1?style=flat-square" alt="How_it_works"/></a>
+<a href="#quick-start"><img src="https://img.shields.io/badge/Quick_start-22c55e?style=flat-square" alt="Quick_start"/></a>
+<a href="#data-model"><img src="https://img.shields.io/badge/Data_model-f59e0b?style=flat-square" alt="Data_model"/></a>
+<a href="#production-checklist"><img src="https://img.shields.io/badge/Production_checklist-ef4444?style=flat-square" alt="Production_checklist"/></a>
+<a href="#author"><img src="https://img.shields.io/badge/Author-a855f7?style=flat-square" alt="Author"/></a>
+</p>
 </div>
 <img src="assets/divider.svg" alt="" width="100%"/>
 ## About
@@ -180,4 +185,3 @@ This is an educational starter project, not a production-certified booking platf
  
 <br/>
 <img src="assets/footer.svg" alt="Built with Django by Deepak Bharti" width="100%"/>
- 
