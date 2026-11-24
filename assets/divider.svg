@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="40" viewBox="0 0 1200 40" role="presentation">
+<defs><linearGradient id="d" x1="0" x2="1"><stop offset="0" stop-color="#38bdf8" stop-opacity="0"/><stop offset=".5" stop-color="#38bdf8"/><stop offset="1" stop-color="#a78bfa" stop-opacity="0"/></linearGradient></defs>
+<style>.dv{animation:s 6s linear infinite}@keyframes s{to{transform:translateX(-400px)}}</style>
+<g><path class="dv" d="M0 20 Q100 4 200 20 T400 20 T600 20 T800 20 T1000 20 T1200 20 T1400 20 T1600 20" fill="none" stroke="url(#d)" stroke-width="2.5"/></g>
+</svg>
